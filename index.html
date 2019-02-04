@@ -4,12 +4,12 @@
   <!-- Meta Properties -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
-  <meta name="description" content="Arras.io is a fan-made sequel of diep.io! Survive and shoot at others while keeping your own tank alive!">
+  <meta name="description" content="OreigBR is a fan-made boss-rush spinoff of diep.io! Work with your team to kill all of the bosses!">
   <meta name="robots" content="index, follow">
   <meta property="og:image" content="/favicons/favicon-96x96.png">
   <meta property="og:image:width" content="52">
   <meta property="og:image:height" content="52">
-  <title>arras.io</title>
+  <title>Oreig.BR</title>
   <!-- CSS -->
   <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet">
   <link rel="stylesheet" href="/css/main.css?1546657515938">
@@ -75,22 +75,13 @@
           <!--<div class="twitterTimeline"><a class="twitter-timeline" data-width="350" data-height="300" data-theme="light" data-link-color="#8ABC3F" href="https://twitter.com/arras_dev?ref_src=twsrc%5Etfw">Tweets by arras_dev</a></div>-->
           <a class="referral" target="_blank" href="https://www.linode.com/?r=d9a53915e5fb2655082c2b3c11164c6e12acc718"><img width="350" height="300" src="/img/linode.png"></a>
           <div id="bottomHolder">
-            <a style="background:#7289DA" href="http://discord.gg/J5h8Hfe">Discord</a>
-            <!--<a style="background:#E0D571" href="https://discord.gg/k8ZFMUz">Dev Discord</a>-->
-            <a style="background:#F74501" href="https://www.reddit.com/r/Diep2io/">Reddit</a>
-            <a style="background:#CEB58F" href="https://arrasrecords.weebly.com/">W. Records</a>
-            <a style="background:#FA7664" href="https://www.patreon.com/arras">Patreon</a>
-            <!--
-              <a style="background:#9974E8;float:right" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=YJ42X4KU6ETPA">Paypal</a>
-              <a style="background:#E27061;float:right" href="https://www.patreon.com/diep2dev">Patreon</a>
-            -->
           </div>
         </div>
         <div class="startMenuHolder">
           <div class="sliderHolder">
             <div class="slider" id="startMenuSlidingContent">
-              <center><a href="http://arras.io"><img src="/favicons/favicon-96x96.png"></a></center>
-              <h1>arras.io</h1>
+              <center><a href="http://oreigbr.tk"><img src="/favicons/favicon-96x96.png"></a></center>
+              <h1>Oreig.BR</h1>
               <div class="serverSelector shadowScroll"><table><tbody id="serverSelector"></tbody></table></div>
               <input type="text" autofocus tabindex="1" spellcheck="false" placeholder="This is the tale of" id="playerNameInput" maxlength="24">
             </div>
@@ -160,13 +151,9 @@
               </table>
               <div class="optionsHeader">More Links</div>
               <center>
-                <a href="https://glitch.com/edit/#!/arras-template?path=README.md">Private Server Template</a>
-                <br>
-                <a href="https://arras-lb.glitch.me/donate">One-time Donation</a>
-                <br>
                 <a href="https://codepen.io/road-to-100k/full/MPyOeQ/">Road's Custom Theme Maker</a>
                 <br>
-                <a href="http://arras-proxy.surge.sh/">Proxy Server</a>
+                <a href="http://oreigbr.github.io/">Proxy Server</a>
               </center>
             </div>
           </div>
@@ -197,18 +184,18 @@
       sliders[0].style.opacity = 1 - clicked
       sliders[2].style.opacity = clicked
     }
-    var hostnames = ['oreigdor.github.io','localhost', 'arras.io', 'beta.arras.io', 'arras-proxy.surge.sh', 'gsngzxa6st.surge.sh']
+    var hostnames = ['oreigbr.github.io','localhost', 'oreigbr.tk', 'beta.arras.io', 'arras-proxy.surge.sh', 'gsngzxa6st.surge.sh']
     if (window !== window.top || hostnames.indexOf(window.location.hostname) === -1) {
       window.addEventListener('load', function() {
-        document.write('<h1>You are on a framed version of arras, the original game is at <a href="http://arras.io/">http://arras.io/</a></h1>')
+        document.write('<h1>You are on a framed version of OreigBR, the original game is at <a href="http://oreigbr.tk/">oreigbr</a></h1>')
       })
       document.body.addEventListener('click', function() {
-        window.top.location = 'http://oreigdor.github.io/'
+        window.top.location = 'http://oreigbr.tk/'
       })
-      window.top.location = 'http://oreigdor.github.io/'
+      window.top.location = 'http://oreigbr.tk/'
     } else {
       var gameScript = document.createElement('script')
-      gameScript.src = '//oreigdor.github.io/bundle.js?1546657515938'
+      gameScript.src = '/bundle.js?1546657515938'
       document.body.appendChild(gameScript)
     }
     window.onerror = function(message, source, lineno, colno, error) {
