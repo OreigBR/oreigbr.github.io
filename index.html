@@ -184,20 +184,9 @@
       sliders[0].style.opacity = 1 - clicked
       sliders[2].style.opacity = clicked
     }
-    var hostnames = ['oreigbr.github.io','localhost', 'oreigbr.tk', 'beta.arras.io', 'arras-proxy.surge.sh', 'gsngzxa6st.surge.sh']
-    if (window !== window.top || hostnames.indexOf(window.location.hostname) === -1) {
-      window.addEventListener('load', function() {
-        document.write('<h1>You are on a framed version of OreigBR, the original game is at <a href="http://oreigbr.tk/">oreigbr</a></h1>')
-      })
-      document.body.addEventListener('click', function() {
-        window.top.location = 'http://oreigbr.tk/'
-      })
-      window.top.location = 'http://oreigbr.tk/'
-    } else {
-      var gameScript = document.createElement('script')
+    var gameScript = document.createElement('script')
       gameScript.src = '/bundle.js?1546657515938'
       document.body.appendChild(gameScript)
-    }
     window.onerror = function(message, source, lineno, colno, error) {
       window.onerror = null
       if (error) error = error.toString()
